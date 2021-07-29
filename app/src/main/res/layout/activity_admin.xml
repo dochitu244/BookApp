@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_175" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do Chi Tu"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+    <TextView
+
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin@gmail.com"
+        android:textSize="22dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/llAdmin1"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        android:background="@drawable/bn_btn_white_admin"
+        android:elevation="8dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="32dp"
+            android:text="Add Category"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdmin2"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llAdmin1"
+        android:background="@drawable/bn_btn_white_admin"
+        android:elevation="8dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="32dp"
+            android:text="Add Book"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdmin3"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llAdmin2"
+        android:background="@drawable/bn_btn_white_admin"
+        android:elevation="8dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="32dp"
+            android:text="Account Settings"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogOutA"
+        android:layout_marginTop="16dp"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:background="@color/naBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llAdmin3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
