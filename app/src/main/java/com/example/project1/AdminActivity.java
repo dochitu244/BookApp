@@ -44,13 +44,13 @@ public class AdminActivity extends AppCompatActivity {
         llCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AdminActivity.this,AddCategoryActivity.class));
+                startActivity(new Intent(AdminActivity.this,CategoryActivityAdmin.class));
             }
         });
         llProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AdminActivity.this,CategoryActivityAdmin.class));
+                startActivity(new Intent(AdminActivity.this,AddBookActivity.class));
             }
         });
     }

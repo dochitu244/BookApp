@@ -79,6 +79,7 @@ public class AddCategoryActivity extends AppCompatActivity {
                     public void onSuccess(Void unused) {
                         dialog.dismiss();
                         Toast.makeText(AddCategoryActivity.this,"Them moi thanh cong",Toast.LENGTH_SHORT).show();
+                        finish();
 
                     }
                 })
